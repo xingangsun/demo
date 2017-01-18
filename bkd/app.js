@@ -11,7 +11,18 @@ import underscoreDb from 'underscore-db'
 import config from '../config'
 
 const app = express()
-export default app
+
+app.all('*', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*")
+    res.header("Access-Control-Allow-Headers", "Content-Type,Content-Length, Authorization, Accept,X-Requested-With")
+    res.header("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS")
+    if(req.method == "OPTIONS") {
+        res.sendStatus(200) // 让options请求快速返回
+    } else {
+        next()
+    }
+})
+
 app.listen(config.bkdServerPort, function () {
     process.stdout.clearLine()
     process.stdout.cursorTo(0)
@@ -22,11 +33,11 @@ app.listen(config.bkdServerPort, function () {
 // console.log(default.address())
 
 // API router
-export const apiRouter = express.Router()
+const apiRouter = express.Router()
 app.use('/api', apiRouter)
 
 // IMG router
-export const imgRouter = express.Router()
+const imgRouter = express.Router()
 app.use('/img', imgRouter)
 
 // 遍历目录并执行文件，你不再需要在手动引入
