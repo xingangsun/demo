@@ -1,5 +1,5 @@
 <template>
-<div class="vx-toast" v-show="show">
+<div class="vx-toast" v-if="show">
     <div class="vx-toast-text">
         <slot></slot>
     </div>
@@ -43,7 +43,8 @@ export default {
 @import '~sitestyle/base.scss';
 
 .vx-toast {
-    position: fixed;
+    // position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     width: 100%;

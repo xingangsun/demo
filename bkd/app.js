@@ -28,9 +28,6 @@ app.listen(config.bkdServerPort, function () {
     process.stdout.cursorTo(0)
     console.log(`bkd-server at ${chalk.magenta.underline(`http://${ip.address()}:${this.address().port}`)}`)
 })
-// export default bkdServer
-
-// console.log(default.address())
 
 // API router
 const apiRouter = express.Router()

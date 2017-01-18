@@ -9,7 +9,8 @@
         <icon slot="right" type="bars" @click.native=""></icon>
     </navbar>
     <!-- banner -->
-    <swiper class="demo-banner" :loop="true" :autoplay="2500" :show-pagination="true">
+    <swiper class="demo-banner" :loop="true" :autoplay="false" :show-pagination="true"
+    :style="{height: bannerHeight}">
         <swiper-slide v-for="banner of bannerList" @click="onSlideClick(banner)">
             <img :src="banner.img">
         </swiper-slide>
@@ -45,6 +46,8 @@ export default {
         return {
             bannerList: [], // 广告列表
             itemList: [], // 项目列表
+
+            bannerHeight: `${300 / 750 * window.innerWidth}px`, // 广告栏高度
 
             bannerLoaded: false, // loading
             itemLoaded: false // loading

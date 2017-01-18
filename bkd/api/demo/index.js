@@ -8,7 +8,7 @@ export default function (router, db) {
     .get('/item/list', function (req, res, next) {
         const item = db.get('items').getById(1).value()
         let items = []
-        for(let i = 0; i < 100; i++) {
+        for(let i = 0; i < 20; i++) {
             items.push(Object.assign({}, item, {
                 id: i + 1,
                 desc: item.desc.substring(0, db._.random(10, item.desc.length))

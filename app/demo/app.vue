@@ -14,7 +14,7 @@ export default {
 
 <style lang="sass">
 @import '~sitestyle/global.scss'; // 全局样式，只引入一次
-@import '../global/fonts/iconfont.scss'; // 全局样式，只引入一次
+@import '~global/fonts/iconfont.scss'; // 全局样式，只引入一次
 @import '~sitestyle/base.scss';
 
 .app {
