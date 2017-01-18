@@ -1,0 +1,36 @@
+{
+  "banners": [
+    {
+      "id": 1,
+      "img": "https://static.zhongan.com/upload/mobile/material/1483520948538.jpg",
+      "url": "https://evt.zhongan.com/gohome/index?bizOrigin=APPchunyunhuijiambn"
+    },
+    {
+      "id": 2,
+      "img": "https://static.zhongan.com/upload/mobile/material/1475202470325.png",
+      "url": "https://c.zhongan.com/open/activity/GoAuto?business_id=1000415005010&utm_source=m_zyggfq"
+    },
+    {
+      "id": 3,
+      "img": "https://static.zhongan.com/upload/mobile/material/1474870969018.png",
+      "url": "http://digital.zhongan.com/h5/zalabs/downloadApp.htm"
+    },
+    {
+      "id": 4,
+      "img": "https://static.zhongan.com/upload/mobile/material/1474871046939.jpg",
+      "url": "https://m.zhongan.com/open/product/productDetail450390034"
+    },
+    {
+      "id": 5,
+      "img": "https://static.zhongan.com/upload/mobile/material/1474871046939.jpg",
+      "url": "https://m.zhongan.com/open/product/productDetail450400071"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "img": "https://static.zhongan.com/upload/mobile/material/1483682974042.png",
+      "desc": "互联网的开放性、共享性和延伸性伴随着互联网生态衍生出的风险，互联网追求极致体验的精神决定了保险的需求无所不在。众安保险致力于做互联网生态的保险、技术驱动的保险、以及空白领域的保险。做有温度的保险-----是我们的产品哲学。"
+    }
+  ]
+}
