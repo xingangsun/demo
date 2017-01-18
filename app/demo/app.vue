@@ -20,5 +20,14 @@ export default {
 .app {
     position: relative;
     min-height: 100%;
+    padding-top: $navbar-height;
+
+    .vx-navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
 }
 </style>
