@@ -1,8 +1,8 @@
 <template>
 <div class="demo-detail">
-    <navbar slot="header">
+    <navbar>
         <icon slot="left" type="left" @click.native="back"> 返回</icon>
-        <span><slot name="title">详情</slot></span>
+        <span>详情</span>
     </navbar>
     详情页
 </div>

@@ -49,9 +49,8 @@ export default {
 @import '~sitestyle/base.scss';
 
 .demo-item {
-    position: relative;
     display: flex;
-    min-height: 120px;
+    height: auto;
     margin: 16px;
     padding: 12px;
     background-color: #fff;

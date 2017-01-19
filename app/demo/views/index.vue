@@ -4,12 +4,12 @@
         <icon type="loading"> 正在加载中…</icon>
     </toast>
     <!-- navbar -->
-    <navbar slot="header">
-        <span><slot name="title">测试一下</slot></span>
+    <navbar>
+        <span>测试一下</span>
         <icon slot="right" type="bars" @click.native=""></icon>
     </navbar>
     <!-- banner -->
-    <swiper class="demo-banner" :loop="true" :autoplay="false" :show-pagination="true"
+    <swiper class="demo-banner" :loop="true" :autoplay="3000" :show-pagination="true"
     :style="{height: bannerHeight}">
         <swiper-slide v-for="banner of bannerList" @click="onSlideClick(banner)">
             <img :src="banner.img">
